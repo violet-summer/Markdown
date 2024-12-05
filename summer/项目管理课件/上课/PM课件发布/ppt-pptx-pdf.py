@@ -1,36 +1,37 @@
-#%%
-from spire.presentation import *
-from spire.presentation.common import *
+import comtypes.client
 import os
-# 设置文件夹路径和输出文件夹路径
-folder_path = os.getcwd()
-print(folder_path)
-output_folder = os.path.join(folder_path,"Output")
-if not os.path.exists(output_folder):
-    os.makedirs(output_folder)
-if not os.access(output_folder, os.W_OK):
-    raise PermissionError(f"Write permission denied for the directory: {output_folder}")
-print("Output folder: ", output_folder)
+# 用ppt微软官方的接口转换最保险（关键免费），有些好用其它公司的包需要付费，非微软官方的包免费的也多多少少有些问题
+def init_powerpoint():
 
-# 遍历文件夹中的文件
-for file_name in os.listdir(folder_path):
-    file_path = os.path.join(folder_path, file_name)
+    powerpoint = comtypes.client.CreateObject("Powerpoint.Application")
+  
+   
+#   默认ppt就不会显示窗口，自己不要手残去设置为可见性参数为1
+    return powerpoint
 
-    # 判断文件名是否以.pptx或.ppt结尾
-    if file_name.lower().endswith('.pptx') or file_name.lower().endswith('.ppt'):
+def ppt_to_pdf(powerpoint, inputFileName, outputFileName, formatType=32):
+    if outputFileName[-3:] != 'pdf':
+        outputFileName = outputFileName + ".pdf"
+        # 是否显示窗口关键是 WithWindow=False参数，网上那些乱七八糟的方法都没用
+    deck = powerpoint.Presentations.Open(inputFileName, WithWindow=False)
+    deck.SaveAs(outputFileName, formatType)  # formatType = 32 for ppt to pdf
+    deck.Close()
 
-        # 根据文件名生成输出路径
-        output_path = os.path.join(output_folder, os.path.splitext(file_name)[0] + '.pdf')
+def convert_files_in_folder(powerpoint, folder):
+    files = os.listdir(folder)
+    pptfiles = [f for f in files if f.endswith((".ppt", ".pptx"))]
+    for pptfile in pptfiles:
+        fullpath = os.path.join(folder, pptfile)
+        output_path = os.path.join(folder, "Output", os.path.splitext(pptfile)[0] + ".pdf")
+        ppt_to_pdf(powerpoint, fullpath, output_path)
 
-        # 创建Presentation对象并从文件加载演示文稿
-        presentation = Presentation()
-        presentation.LoadFromFile(file_path)
-
-        # 将演示文稿保存为PDF格式到指定输出文件夹
-        presentation.SaveToFile(output_path, FileFormat.PDF)
-
-        # 释放Presentation对象占用的资源
-        presentation.Dispose()
-#%%
-
-#%%
+if __name__ == "__main__":
+    print("Start")
+    powerpoint = init_powerpoint()
+    cwd = os.getcwd()
+    output_folder = os.path.join(cwd, "Output")
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
+    convert_files_in_folder(powerpoint, cwd)
+    powerpoint.Quit()
+    print("Done")

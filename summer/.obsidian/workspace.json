@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "14c91dacf5a07c21",
+        "id": "ad79351ef140e048",
         "type": "tabs",
         "children": [
           {
-            "id": "861f050d0611b455",
+            "id": "cceb309793acef50",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "项目管理/课件/动态规划-ppt.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "动态规划-ppt"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -187,17 +185,17 @@
   },
   "active": "87823661912e0ddd",
   "lastOpenFiles": [
-    "项目管理课件/上课/PM课件发布/Output/软件项目复杂度描述.pdf",
-    "项目管理课件/上课/PM课件发布/Output/动态规划与人力资源成本核算.pdf",
-    "项目管理课件/上课/PM课件发布/Output/动态规划-ppt.pdf",
-    "项目管理课件/上课/PM课件发布/Output/人力资源的工期与成本估算.pdf",
-    "项目管理课件/上课/PM课件发布/Output/Chapter 9 Project Human Resource Management.pdf",
-    "项目管理课件/上课/PM课件发布/Output/Chapter 8 Project Quality Management-2.pdf",
-    "项目管理课件/上课/PM课件发布/Output/Chapter 7 Project Cost Management-2.pdf",
-    "项目管理课件/上课/PM课件发布/Output/Chapter 6 Project Time Management-2.pdf",
-    "项目管理课件/上课/PM课件发布/Output/Chapter 5 Project Scope Management.pdf",
-    "项目管理课件/上课/PM课件发布/Output/Chapter 4 Project Integration Management-2.pdf",
-    "项目管理课件/上课/PM课件发布/Output/Chapter 3 The Project Management Process Groups A Case Study-1.pdf",
+    "项目管理课件/上课/PM课件发布/Output/mso53F8.tmp",
+    "项目管理课件/上课/PM课件发布/Output/mso45BE.tmp",
+    "项目管理课件/上课/PM课件发布/~$软件项目复杂度描述.pptx",
+    "项目管理课件/上课/PM课件发布/Output/mso4455.tmp",
+    "项目管理课件/上课/PM课件发布/~$动态规划与人力资源成本核算.ppt",
+    "项目管理课件/上课/PM课件发布/Output/mso4389.tmp",
+    "项目管理课件/上课/PM课件发布/Output/mso3A12.tmp",
+    "项目管理课件/上课/PM课件发布/~$动态规划-ppt.ppt",
+    "项目管理课件/上课/PM课件发布/Output/mso38D7.tmp",
+    "项目管理课件/上课/PM课件发布/Output/mso286B.tmp",
+    "项目管理课件/上课/PM课件发布/~$人力资源的工期与成本估算.pptx",
     "体系结构/体系结构知识点罗列/体系结构知识点罗列.md",
     "体系结构/体系结构知识点罗列/assets/0fbb7eddabccdeaf5daf9ea051b0f27.jpg",
     "复习规划.md",

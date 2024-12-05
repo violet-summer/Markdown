@@ -5,8 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01dbc9cf-27d4-433f-a78c-0cf2d8655bc9" name="更改" comment="Merge remote-tracking branch 'origin/summer' into summer">
-      <change afterPath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/ppt-pptx-pdf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/summer/.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/summer/.obsidian/workspace.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer/项目管理课件/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/summer/项目管理课件/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/Chapter 1 Introduction to Project Management-new.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/Chapter 1 Introduction to Project Management-new.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/Chapter 10 Project Communications Management.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/Chapter 10 Project Communications Management.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/Chapter 11 Project Risk Management.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/Chapter 11 Project Risk Management.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/Chapter 12 Project Procurement Management-1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/Chapter 12 Project Procurement Management-1.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/Chapter 13 Project Stakeholder Management.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/Chapter 13 Project Stakeholder Management.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/Chapter 2 The Project Management and Information Technology Context-new1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/Chapter 2 The Project Management and Information Technology Context-new1.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/Chapter 3 The Project Management Process Groups A Case Study-1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/Chapter 3 The Project Management Process Groups A Case Study-1.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/Chapter 4 Project Integration Management-2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/Chapter 4 Project Integration Management-2.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/Chapter 5 Project Scope Management.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/Chapter 5 Project Scope Management.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/Chapter 6 Project Time Management-2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/Chapter 6 Project Time Management-2.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/Chapter 7 Project Cost Management-2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/Chapter 7 Project Cost Management-2.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/Chapter 8 Project Quality Management-2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/Chapter 8 Project Quality Management-2.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/Chapter 9 Project Human Resource Management.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/Chapter 9 Project Human Resource Management.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/人力资源的工期与成本估算.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/人力资源的工期与成本估算.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/动态规划-ppt.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/动态规划-ppt.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/动态规划与人力资源成本核算.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/动态规划与人力资源成本核算.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/软件项目复杂度描述.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/Output/软件项目复杂度描述.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/ppt-pptx-pdf.py" beforeDir="false" afterPath="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布/ppt-pptx-pdf.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +59,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.ppt-pptx-pdf.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "summer",
@@ -49,10 +70,10 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "project.structure.last.edited": "SDK",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -79,6 +100,9 @@
       <updated>1733368229592</updated>
       <workItem from="1733368230335" duration="537000" />
       <workItem from="1733371250833" duration="55000" />
+      <workItem from="1733373608495" duration="166000" />
+      <workItem from="1733373804770" duration="46000" />
+      <workItem from="1733381053353" duration="776000" />
     </task>
     <task id="LOCAL-00001" summary="1&#10;Update README.md">
       <option name="closed" value="true" />
@@ -106,5 +130,8 @@
     <MESSAGE value="1&#10;Update README.md" />
     <MESSAGE value="Merge remote-tracking branch 'origin/summer' into summer" />
     <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/summer' into summer" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Markdown$ppt_pptx_pdf.coverage" NAME="ppt-pptx-pdf 覆盖结果" MODIFIED="1733381535990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/summer/项目管理课件/上课/PM课件发布" />
   </component>
 </project>

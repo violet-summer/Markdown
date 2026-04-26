@@ -1,0 +1,15 @@
+spring:
+  application:
+    name:
+      common-utils
+  cloud:
+    nacos:
+      discovery:
+        username: ${spring.cloud.nacos.username}
+        password: ${spring.cloud.nacos.password}
+        group: ocr_back
+      server-addr: 172.20.0.3:8848
+      username: nacos
+      password: nacos
+server:
+  port: 8086

@@ -1,0 +1,55 @@
+spring:
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+  datasource:
+    url: jdbc:mysql://localhost:3306/3d_city?useSSL=false&serverTimezone=UTC
+    username: root
+    password: helloworld
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  sql:
+    init:
+      mode: never
+      schema-locations: classpath:db/3d_city/init.sql
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQLDialect
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: helloworld
+    virtual-host: /
+  Kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: city-group
+      auto-offset-reset: earliest
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    consumer-properties:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+server:
+  port: 8080
+minio:
+  endpoint: http://127.0.0.1:9000
+  access-key: admin
+  secret-key: helloworld
+  bucket: city
+  app-prefix: app/
+  presign-expiry-seconds: 3600
+  connect-timeout: 5000 # 毫秒，连接超时
+  read-timeout: 30000   # 毫秒，读超时
+  write-timeout: 30000  # 毫秒，写超时
+  max-idle-connections: 20 # 最大空闲连接数
+  keep-alive-duration: 5   # 连接池保活分钟
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:/mapper/**/*.xml
+  type-aliases-package: com.example.citybusiness.mybatisplus.entity
+jwt:
+  secret: "b7f3c2e8a9d4f1b6c5e7a2d9f8b3c6e1b4d7a8c2f3e6b1d9a5c8f2e3b7d6a4c1"

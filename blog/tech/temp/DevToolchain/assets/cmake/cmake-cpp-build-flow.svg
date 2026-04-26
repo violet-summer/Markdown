@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="460" viewBox="0 0 1180 460">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1180" height="460" fill="#f8fafc"/>
+  <text x="30" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#111827">
+    CMake and C++ Build Flow
+  </text>
+
+  <rect x="30" y="90" width="210" height="90" rx="10" ry="10" fill="#dbeafe" stroke="#475569" stroke-width="2"/>
+  <text x="135" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#0f172a">Source Inputs</text>
+  <text x="135" y="146" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#334155">CMakeLists.txt</text>
+  <text x="135" y="166" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#334155">src/*.cpp, include/*.h</text>
+
+  <rect x="280" y="90" width="240" height="90" rx="10" ry="10" fill="#dcfce7" stroke="#475569" stroke-width="2"/>
+  <text x="400" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#0f172a">Configure Stage</text>
+  <text x="400" y="146" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#334155">cmake -S . -B out/build</text>
+  <text x="400" y="166" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#334155">-G Ninja / --preset ...</text>
+
+  <rect x="560" y="90" width="260" height="90" rx="10" ry="10" fill="#fee2e2" stroke="#475569" stroke-width="2"/>
+  <text x="690" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#0f172a">Generated Build System</text>
+  <text x="690" y="146" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#334155">Ninja files / VS project</text>
+  <text x="690" y="166" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#334155">CMakeCache.txt in build dir</text>
+
+  <rect x="860" y="90" width="290" height="90" rx="10" ry="10" fill="#ede9fe" stroke="#475569" stroke-width="2"/>
+  <text x="1005" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#0f172a">Compile and Link Stage</text>
+  <text x="1005" y="146" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#334155">cmake --build out/build</text>
+  <text x="1005" y="166" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#334155">compiler + linker produce targets</text>
+
+  <path d="M240 135 L280 135" fill="none" stroke="#6b7280" stroke-width="2.2" marker-end="url(#arrow)"/>
+  <path d="M520 135 L560 135" fill="none" stroke="#6b7280" stroke-width="2.2" marker-end="url(#arrow)"/>
+  <path d="M820 135 L860 135" fill="none" stroke="#6b7280" stroke-width="2.2" marker-end="url(#arrow)"/>
+
+  <rect x="100" y="260" width="280" height="120" rx="10" ry="10" fill="#fef3c7" stroke="#475569" stroke-width="2"/>
+  <text x="240" y="294" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#0f172a">Compiler Selection</text>
+  <text x="240" y="318" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#334155">CMAKE_C_COMPILER</text>
+  <text x="240" y="338" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#334155">CMAKE_CXX_COMPILER</text>
+  <text x="240" y="358" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#334155">(from preset or -D args)</text>
+
+  <rect x="450" y="260" width="280" height="120" rx="10" ry="10" fill="#cffafe" stroke="#475569" stroke-width="2"/>
+  <text x="590" y="294" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#0f172a">Dependency Resolution</text>
+  <text x="590" y="318" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#334155">vcpkg toolchain file</text>
+  <text x="590" y="338" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#334155">find_package(... CONFIG)</text>
+  <text x="590" y="358" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#334155">imported targets linked</text>
+
+  <rect x="800" y="260" width="320" height="120" rx="10" ry="10" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+  <text x="960" y="294" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#0f172a">Outputs</text>
+  <text x="960" y="318" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#334155">exe / dll / so / static lib</text>
+  <text x="960" y="338" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#334155">ctest for tests</text>
+  <text x="960" y="358" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#334155">cmake --install for deployment</text>
+
+  <path d="M400 180 C330 220, 280 240, 240 260" fill="none" stroke="#94a3b8" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <path d="M520 180 C540 220, 560 240, 590 260" fill="none" stroke="#94a3b8" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <path d="M960 180 C970 220, 970 240, 960 260" fill="none" stroke="#94a3b8" stroke-width="1.8" marker-end="url(#arrow)"/>
+</svg>

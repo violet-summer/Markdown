@@ -1,0 +1,10 @@
+^D:\CODE\3D_CITY\APP\TEMP\BUILD\CMAKEFILES\BCB0BC00B6A8D526A2F8D470E0F6DC3B\GENERATE.STAMP.RULE
+setlocal
+D:\DevTools\CMake\bin\cmake.exe -SD:/CODE/3d_city/app/temp -BD:/CODE/3d_city/app/temp/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/CODE/3d_city/app/temp/build/city_procgen_cpp.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

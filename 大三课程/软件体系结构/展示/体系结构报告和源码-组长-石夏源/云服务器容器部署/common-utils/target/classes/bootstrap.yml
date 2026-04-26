@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: common-utils
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      server-addr: 172.20.0.3:8848
+      username: nacos
+      password: nacos
+      config:
+        file-extension: yml
+        group: ocr_back

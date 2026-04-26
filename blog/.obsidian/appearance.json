@@ -1,0 +1,10 @@
+{
+  "cssTheme": "Atom",
+  "theme": "obsidian",
+  "accentColor": "#857e95",
+  "baseFontSizeAction": true,
+  "enabledCssSnippets": [
+    "mermaid"
+  ],
+  "baseFontSize": 15
+}

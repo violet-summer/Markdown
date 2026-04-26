@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: user-service
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://172.20.0.2:3306/nacos
+    username: nacos
+    password: nacos
+  cloud:
+    nacos:
+      server-addr: http://172.20.0.3:8848
+      username: nacos
+      password: nacos
+      config:
+        import-check:
+          enabled: false
+      discovery:
+        server-addr: ${spring.cloud.nacos.server-addr}
+        username: ${spring.cloud.nacos.username}
+        password: ${spring.cloud.nacos.password}
+        group: ocr_back
+
+logging:
+  level:
+    com:
+      alibaba:
+        nacos: DEBUG
+server:
+  port: 8085

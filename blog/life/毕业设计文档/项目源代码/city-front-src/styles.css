@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Layout using logical pixels (CSS px) plus viewport-driven fluid tokens (vw) */
+  color-scheme: light;
+  font-family: "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", "PingFang SC", "Segoe UI", sans-serif;
+
+  /* Base logical pixel tokens (use CSS px as logical pixels) */
+  --ink: #1a1a1a;
+  --muted: #6a6258;
+  --surface: #f6f4f1;
+  --surface-2: #ede8e2;
+  --accent: #2f5d56;
+  --accent-2: #7b6e5b;
+  --border: #e1ddd6;
+  --shadow: rgba(19, 18, 17, 0.08);
+
+  /* Fixed logical pixel spacing and text sizes (px values intentionally left as logical pixels) */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --text-sm: 14px;
+  --text-md: 16px;
+  --text-lg: 18px;
+  --ui-control-width: 72px; /* keep logical-px control width */
+
+  /* Fluid tokens: combine logical px endpoints with vw to create viewport-responsive sizes */
+  /* Example: fluid gap grows with viewport but bounded between min and max px */
+  --fluid-gap: clamp(8px, 1.5vw, 24px);
+  --fluid-h1: clamp(20px, 3.4vw, 40px);
+  --fluid-h2: clamp(18px, 2.6vw, 32px);
+  --fluid-card-width: clamp(280px, 30vw, 520px);
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --ink: #f2f0ee;
+  --muted: #b9b1a6;
+  --surface: #141312;
+  --surface-2: #1d1a18;
+  --accent: #7aa79c;
+  --accent-2: #b99c73;
+  --border: #2a2621;
+  --shadow: rgba(0, 0, 0, 0.4);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  overflow: auto;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: linear-gradient(180deg, #f6f2ed, #f2eee8 45%, #efeae3 100%);
+  min-height: 100%;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+}
+
+[data-theme="dark"] body {
+  background: linear-gradient(180deg, #141210, #10100f 55%, #0b0a09 100%);
+}
+
+.pretty-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+.pretty-scrollbar::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.pretty-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.pretty-scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--border);
+  border: 2px solid transparent;
+  border-radius: 9999px;
+  background-clip: content-box;
+}
+
+.pretty-scrollbar:hover::-webkit-scrollbar-thumb {
+  background-color: var(--muted);
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    /* use logical px for translateY to match request */
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

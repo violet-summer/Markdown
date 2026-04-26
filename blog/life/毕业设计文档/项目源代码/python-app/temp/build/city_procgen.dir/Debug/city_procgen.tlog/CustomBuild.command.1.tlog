@@ -1,0 +1,10 @@
+^D:\CODE\3D_CITY\APP\TEMP\CMAKELISTS.TXT
+setlocal
+D:\DevTools\CMake\bin\cmake.exe -SD:/CODE/3d_city/app/temp -BD:/CODE/3d_city/app/temp/build --check-stamp-file D:/CODE/3d_city/app/temp/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

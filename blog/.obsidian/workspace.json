@@ -1,0 +1,235 @@
+{
+  "main": {
+    "id": "75ffb5cd90d1042e",
+    "type": "split",
+    "children": [
+      {
+        "id": "68212e3f0524a122",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4b161a8ac822e602",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ai-learn/part_1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "part_1"
+            }
+          },
+          {
+            "id": "f78654538f8653ce",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "diary/2026/04/2026-04-05.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-04-05"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "db3093a2a91ef89b",
+    "type": "split",
+    "children": [
+      {
+        "id": "1345efad9c5e0f58",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4488f2b841173cf9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "6b50b0b2bc50eb9e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "6050fd7f8d1cf2ac",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 529.5
+  },
+  "right": {
+    "id": "075d67ec12262387",
+    "type": "split",
+    "children": [
+      {
+        "id": "d377eb54d55361c1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "009b082b435e5c50",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "course/software-test/review.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "review 的反向链接列表"
+            }
+          },
+          {
+            "id": "9d8027fa918061b2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "176085df76ec6329",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "f86df52fdf61284a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "diary/2026/04/2026-04-05.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "2026-04-05 的大纲"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 366.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:新建数据库": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "canvas:新建白板": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "f78654538f8653ce",
+  "lastOpenFiles": [
+    "diary/2026/04/2026-04-02.md",
+    "diary/2026/04/2026-04-05.md",
+    "毕业设计文档/外文翻译.md",
+    "毕业设计文档/Untitled.md",
+    "毕业设计文档/毕业设计管理办法及相关文件/~$1：本科毕业设计（论文）撰写规范（工科、理科类专业）（2025年11月更新）.doc",
+    "毕业设计文档/毕业设计管理办法及相关文件/~$3：本科毕业设计（论文）评分标准（工科、理科类专业）.doc",
+    "毕业设计文档/毕设最终doc文档/~$6：本科毕业设计（论文）外文翻译.doc",
+    "毕业设计文档/毕设最终doc文档/附件6：本科毕业设计（论文）外文翻译.doc",
+    "毕业设计文档/毕设最终doc文档/~$2：本科毕业设计（论文）格式范例（工科、理科类专业）（2025年11月更新）.doc",
+    "Untitled.md",
+    "ai-learn/part_1.md",
+    "ai-learn",
+    "毕业设计文档/part1.md",
+    "diary/2026/03/2026-03-29.md",
+    "diary/2026/04",
+    "diary/2026/03/2026-03-28.md",
+    "work/cmake.md",
+    "work/Untitled.md",
+    "diary/2026/03/2026-03-25.md",
+    "复试/assets/讲稿/image-20260325231103263.png",
+    "复试/assets/讲稿/image-20260325231053546.png",
+    "复试/assets/讲稿/image-20260325231011827.png",
+    "复试/assets/讲稿/image-20260325230842391.png",
+    "复试/assets/讲稿/image-20260325230834376.png",
+    "复试/assets/讲稿/image-20260325230820191.png",
+    "复试/assets/讲稿/image-20260325230810559.png",
+    "复试/assets/讲稿/image-20260325230756687.png",
+    "复试/assets/讲稿/image-20260325230732337.png",
+    "复试/assets/讲稿/image-20260325230718970.png",
+    "复试/assets/讲稿",
+    "复试/讲稿.pdf",
+    "复试/讲稿.md",
+    "复试/Untitled.md",
+    "复试/ai.md",
+    "work/spring-boot.md",
+    "diary/2026/03/2026-03-21.md",
+    "复试/ppt5246.tmp",
+    "复试/复试材料/复试ai项目/archi-master/README.md",
+    "复试/复试材料/复试ai项目/复试ai项目/archi-master/README.md",
+    "work/开发.md",
+    "work/rabbitmq.md",
+    "work/kafka.md",
+    "work/open_claw.md",
+    "gallery/mc.md",
+    "code-learn-software-framework/jsx/vite.md",
+    "code-learn-software-framework/git.md"
+  ]
+}

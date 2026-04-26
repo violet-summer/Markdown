@@ -1,3 +1,0 @@
-F:/CODE/GIThub/Markdown/cmake-build-debug/CMakeFiles/Markdown.dir
-F:/CODE/GIThub/Markdown/cmake-build-debug/CMakeFiles/edit_cache.dir
-F:/CODE/GIThub/Markdown/cmake-build-debug/CMakeFiles/rebuild_cache.dir

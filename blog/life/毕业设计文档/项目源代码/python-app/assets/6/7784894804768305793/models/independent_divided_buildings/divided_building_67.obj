@@ -1,0 +1,24 @@
+# Created by Open3D 
+# object name: divided_building_67
+# number of vertices: 8
+# number of triangles: 12
+v 50.9056 3 84.9114
+v 50.9056 3 86.1126
+v 53.836 3 86.1126
+v 53.836 3 84.9114
+v 50.9056 6 84.9114
+v 50.9056 6 86.1126
+v 53.836 6 86.1126
+v 53.836 6 84.9114
+f 2 1 4
+f 4 3 2
+f 6 8 5
+f 8 6 7
+f 1 2 5
+f 5 2 6
+f 2 3 6
+f 6 3 7
+f 3 4 7
+f 7 4 8
+f 4 1 8
+f 8 1 5

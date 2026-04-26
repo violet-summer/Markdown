@@ -1,0 +1,11 @@
+com\example\user_service\service\UserService.class
+com\example\user_service\dao\UserDao.class
+com\example\user_service\pojo\User.class
+com\example\user_service\UserServiceApplication.class
+com\example\user_service\service\OcrService.class
+com\example\user_service\DTO\LoginDTO.class
+com\example\user_service\controller\UserController$1.class
+com\example\user_service\controller\UserController.class
+com\example\user_service\config\RestTemplateConfig.class
+com\example\user_service\service\OcrService$1.class
+com\example\user_service\DTO\RegisterDTO.class

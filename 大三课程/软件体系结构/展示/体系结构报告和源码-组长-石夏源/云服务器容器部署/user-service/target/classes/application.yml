@@ -1,0 +1,23 @@
+#spring:
+#  application:
+#    name: user-service
+#  cloud:
+#    nacos:
+#      server-addr: http://127.0.0.1:8848
+#      username: nacos
+#      password: nacos
+#      config:
+#        import-check:
+#          enabled: false
+#
+#      discovery:
+#        server-addr: ${spring.cloud.nacos.server-addr}
+#        username: ${spring.cloud.nacos.username}
+#        password: ${spring.cloud.nacos.password}
+#        group: ocr_back
+#
+#logging:
+#  level:
+#    com:
+#      alibaba:
+#        nacos: DEBUG

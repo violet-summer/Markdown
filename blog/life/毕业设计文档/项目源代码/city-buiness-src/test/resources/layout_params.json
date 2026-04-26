@@ -1,0 +1,152 @@
+{
+  "world_dimensions": {
+    "x": 640,
+    "y": 360
+  },
+  "origin": {
+    "x": 0,
+    "y": 0
+  },
+  "zoom": 0.1,
+  "tensor_field": {
+    "smooth": true,
+    "set_recommended": true,
+    "grids": [
+      {
+        "x": 40,
+        "y": 20,
+        "size": 64,
+        "decay": 10,
+        "theta": 59
+      },
+      {
+        "x": 196,
+        "y": 308,
+        "size": 48,
+        "decay": 10,
+        "theta": 89
+      },
+      {
+        "x": 296,
+        "y": 60,
+        "size": 48,
+        "decay": 10,
+        "theta": 28
+      }
+    ],
+    "radials": [
+      {
+        "x": 200,
+        "y": 200,
+        "size": 55,
+        "decay": 5
+      }
+    ]
+  },
+  "map": {
+    "animate": true,
+    "animate_speed": 10,
+    "water": {
+      "river_bank_size": 3,
+      "river_size": 5,
+      "coastline_width": 2.0,
+      "coastline": {
+        "noise_enabled": true,
+        "noise_size": 2,
+        "noise_angle": 20
+      },
+      "river": {
+        "noise_enabled": true,
+        "noise_size": 4,
+        "noise_angle": 10
+      },
+      "simplify_tolerance": 0.5,
+      "dev_params": {
+        "dsep": 1,
+        "dtest": 1,
+        "path_iterations": 1000,
+        "seed_tries": 300,
+        "dstep": 1,
+        "dlookahead": 100,
+        "dcircle_join": 1,
+        "join_angle": 0.1
+      }
+    },
+    "main": {
+      "dsep": 40,
+      "dtest": 20,
+      "dev_params": {
+        "path_iterations": 1000,
+        "seed_tries": 100,
+        "dstep": 0.1,
+        "dlookahead": 50,
+        "dcircle_join": 5,
+        "join_angle": 0.1,
+        "simplify_tolerance": 0.05,
+        "collide_early": 0
+      }
+    },
+    "major": {
+      "dsep": 20,
+      "dtest": 100,
+      "dev_params": {
+        "path_iterations": 1000,
+        "seed_tries": 100,
+        "dstep": 0.1,
+        "dlookahead": 23,
+        "dcircle_join": 3,
+        "join_angle": 0.1,
+        "simplify_tolerance": 0.05,
+        "collide_early": 0
+      }
+    },
+    "minor": {
+      "dsep": 4,
+      "dtest": 4,
+      "dev_params": {
+        "path_iterations": 1000,
+        "seed_tries": 100,
+        "dstep": 0.1,
+        "dlookahead": 5,
+        "dcircle_join": 1,
+        "join_angle": 0.1,
+        "simplify_tolerance": 0.05,
+        "collide_early": 0
+      }
+    },
+    "parks": {
+      "cluster_big_parks": false,
+      "num_big_parks": 9,
+      "num_small_parks": 10
+    },
+    "buildings": {
+      "min_area": 10,
+      "max_length": 50,
+      "shrink_spacing": 2,
+      "chance_no_divide": 0.05
+    }
+  },
+  "style": {
+    "colour_scheme": "Default",
+    "zoom_buildings": true,
+    "building_models": true,
+    "show_frame": true,
+    "orthographic": true,
+    "camera_x": 0,
+    "camera_y": 0
+  },
+  "options": {
+    "draw_center": true,
+    "high_dpi": true
+  },
+  "download": {
+    "image_scale": 1,
+    "type": ""
+  },
+  "park_polygons": {
+    "max_length": 40,
+    "min_area": 1,
+    "shrink_spacing": 3,
+    "chance_no_divide": 0
+  }
+}

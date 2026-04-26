@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: ocr-gateway
+  main:
+    web-application-type: reactive
+  cloud:
+    nacos:
+      config:
+        import-check:
+          enabled: false
+      discovery:
+        server-addr: 172.20.0.3:8848 # Nacos 地址
+        username: nacos
+        password: nacos
+        namespace: public
+        group: ocr_back
+
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: user-service-route
+          uri: lb://user-service # 负载均衡调用 user-service
+          predicates:
+            - Path=/user/** # 匹配路径 /user/**
+
+        - id: ocr-service-route
+          uri: lb://ocr-service # 负载均衡调用 ocr-service
+          predicates:
+            - Path=/ocr/** # 匹配路径 /ocr/**
+      enabled: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://172.20.0.2:3306/nacos
+    username: nacos
+    password: nacos
+
+
+
+server:
+  port: 8087
+

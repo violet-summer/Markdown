@@ -1,0 +1,3 @@
+D:/CODE/3d_city/app/temp/build/CMakeFiles/city_procgen.dir
+D:/CODE/3d_city/app/temp/build/CMakeFiles/ALL_BUILD.dir
+D:/CODE/3d_city/app/temp/build/CMakeFiles/ZERO_CHECK.dir

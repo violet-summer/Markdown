@@ -1,0 +1,53 @@
+syntax = "proto3";
+
+package com.example.layout.proto;
+
+// 布局任务消息
+message LayoutTaskMessage {
+  string taskId = 1;
+  string type = 2; // 固定为 "layout"
+  string params = 3; // json字符串
+  string layoutDir = 4;
+  string responseMode = 5;
+  bool forceRegenerate = 6;
+}
+
+// 布局进度消息
+message LayoutProgressMessage {
+  string taskId = 1;
+  int32 progress = 2;
+  string status = 3;
+  string message = 4;
+}
+
+// 布局结果消息
+message LayoutTaskResultMessage {
+  string taskId = 1;
+  string status = 2; // "success" / "fail"
+  string svgUrl = 3;
+  string message = 4;
+}
+
+// 模型任务消息
+message ModelTaskMessage {
+  string taskId = 1;
+  string type = 2; // 固定为 "model"
+  string outputDir = 3;
+  string layoutJsonFilePath = 4;
+}
+
+// 模型进度消息
+message ModelProgressMessage {
+  string taskId = 1;
+  int32 progress = 2;
+  string status = 3;
+  string message = 4;
+}
+
+// 模型结果消息
+message ModelTaskResultMessage {
+  string taskId = 1;
+  string status = 2;
+  string message = 3;
+  map<string, string> modelsPaths = 4; // key:模型类型, value:路径
+}

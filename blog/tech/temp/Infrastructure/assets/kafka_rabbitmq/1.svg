@@ -1,0 +1,78 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+    <!-- 定义阴影、渐变和箭头标记 -->
+    <defs>
+        <!-- 箭头标记 -->
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#666"/>
+        </marker>
+        
+        <!-- 方框阴影 -->
+        <filter id="shadow" x="-5%" y="-5%" width="120%" height="120%">
+            <feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#000" flood-opacity="0.1"/>
+        </filter>
+
+        <!-- 队列内部消息的背景渐变 -->
+        <linearGradient id="msgGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#FFF3E0"/>
+            <stop offset="100%" stop-color="#FFE0B2"/>
+        </linearGradient>
+    </defs>
+
+    <!-- 标题 -->
+    <text x="400" y="40" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold" fill="#333">消息队列架构</text>
+    <text x="400" y="65" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#666">例如 Kafka、RabbitMQ、AWS SQS</text>
+
+    <!-- ================= 生产者（Producer） ================= -->
+    <!-- 生产者方框 -->
+    <rect x="50" y="150" width="150" height="100" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="2" filter="url(#shadow)"/>
+    
+    <!-- 生产者文本 -->
+    <text x="125" y="195" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#0D47A1">生产者</text>
+    <text x="125" y="220" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1565C0">数据源 / 应用</text>
+
+    <!-- ================= 消费者（Consumer） ================= -->
+    <!-- 消费者方框 -->
+    <rect x="600" y="150" width="150" height="100" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2" filter="url(#shadow)"/>
+    
+    <!-- 消费者文本 -->
+    <text x="675" y="195" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#1B5E20">消费者</text>
+    <text x="675" y="220" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#2E7D32">数据处理 / 应用</text>
+
+    <!-- ================= 消息队列（Message Queue） ================= -->
+    <!-- 队列背景 -->
+    <rect x="300" y="110" width="200" height="180" rx="8" fill="#FFF8E1" stroke="#FFB300" stroke-width="2" stroke-dasharray="5,5" filter="url(#shadow)"/>
+    
+    <!-- 队列标题 -->
+    <text x="400" y="140" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#E65100">消息队列</text>
+
+    <!-- 队列中的消息 1 -->
+    <rect x="330" y="160" width="140" height="30" rx="4" fill="url(#msgGrad)" stroke="#FFCA28" stroke-width="1"/>
+    <text x="400" y="180" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#4E342E">📧 消息 A</text>
+
+    <!-- 队列中的消息 2 -->
+    <rect x="330" y="200" width="140" height="30" rx="4" fill="url(#msgGrad)" stroke="#FFCA28" stroke-width="1"/>
+    <text x="400" y="220" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#4E342E">📧 消息 B</text>
+
+    <!-- 队列中的消息 3 -->
+    <rect x="330" y="240" width="140" height="30" rx="4" fill="url(#msgGrad)" stroke="#FFCA28" stroke-width="1"/>
+    <text x="400" y="260" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#4E342E">📧 消息 C</text>
+
+    <!-- ================= 数据流箭头 ================= -->
+    
+    <!-- 生产者到队列（推送） -->
+    <line x1="200" y1="200" x2="300" y2="200" stroke="#666" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="250" y="185" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#555" font-weight="bold">推送</text>
+
+    <!-- 队列到消费者（拉取/消费） -->
+    <line x1="500" y1="200" x2="600" y2="200" stroke="#666" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="550" y="185" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#555" font-weight="bold">拉取 / 弹出</text>
+
+    <!-- ================= 额外说明文本 ================= -->
+    <text x="400" y="340" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#888">
+        说明：生产者发送消息到队列，消息在队列中等待，消费者从队列中获取并处理消息（先进先出原则）。
+    </text>
+    <text x="400" y="360" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#888">
+        这种模式能够实现上下游解耦、流量削峰和异步处理。
+    </text>
+
+</svg>

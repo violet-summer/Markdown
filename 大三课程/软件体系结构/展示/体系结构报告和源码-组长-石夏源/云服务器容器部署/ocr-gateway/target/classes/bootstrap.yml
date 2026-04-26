@@ -1,0 +1,33 @@
+spring:
+  main:
+    web-application-type: reactive
+  application:
+    name: ocr-gateway
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      server-addr: 172.20.0.3:8848
+      discovery:
+        username: nacos
+        password: nacos
+        server-addr: ${spring.cloud.nacos.server-addr}
+        group: ocr_back
+        service: ${spring.application.name}
+      config:
+        server-addr: ${spring.cloud.nacos.server-addr}
+        file-extension: yml
+        username: nacos
+        password: nacos
+        enabled: true
+        group: ocr_back
+    gateway:
+      routes:
+        - id: user-service-route
+          uri: lb://user-service
+          predicates:
+            - Path=/user/**
+        - id: ocr-service-route
+          uri: lb://ocr-service
+          predicates:
+            - Path=/ocr/**

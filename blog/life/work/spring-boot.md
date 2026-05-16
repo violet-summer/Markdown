@@ -195,3 +195,101 @@ spring:
 在解析message的时候，结果是proto的类型对象，应该使用proto库的序列化方式才可以正确存入数据库的`json`字段属性。
 
 通信两端都要利用proto解析，避免一端使用自带的json解析库。
+
+
+#### proto和open-api的常见问题
+
+生成代码之后静态编译检查无法检查到生成的target目录下的软件包结构导致报错
+
+```xml
+ <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.example.layout.CityBusinessApplication</mainClass>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.xolstice.maven.plugins</groupId>
+                <artifactId>protobuf-maven-plugin</artifactId>
+                <version>0.6.1</version>
+                <configuration>
+                    <protoSourceRoot>${project.basedir}/src/main/proto</protoSourceRoot>
+                    <protocExecutable>C:/APP/protoc-34.0-win64/bin/protoc.exe</protocExecutable>
+                    <outputDirectory>${project.basedir}/src/main/java-generated</outputDirectory>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.openapitools</groupId>
+                <artifactId>openapi-generator-maven-plugin</artifactId>
+                <version>7.19.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <phase>generate-sources</phase>
+                    </execution>
+                </executions>
+                <configuration>
+                    <inputSpec>file:///D:/CODE/contracts/city/stage_1/openapi/v2.openapi.yaml</inputSpec>
+                    <generatorName>spring</generatorName>
+                    <output>${project.build.directory}/generated-sources/openapi</output>
+                    <apiPackage>com.example.layout.contract.api</apiPackage>
+                    <modelPackage>com.example.layout.contract.model</modelPackage>
+                    <generateApiTests>false</generateApiTests>
+                    <generateModelTests>false</generateModelTests>
+                    <generateApiDocumentation>false</generateApiDocumentation>
+                    <generateModelDocumentation>false</generateModelDocumentation>
+                    <configOptions>
+                        <sourceFolder>src/main/java</sourceFolder>
+                        <useLombok>true</useLombok>
+                        <useJakartaEe>true</useJakartaEe>
+                        <library>spring-boot</library>
+                        <serializationLibrary>jackson</serializationLibrary>
+                        <interfaceOnly>true</interfaceOnly>
+                    </configOptions>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>add-generated-source</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+<!--                                <source>${project.build.directory}/generated-sources/openapi/src/main/java</source>-->
+                                <source>${project.basedir}/src/main/java-generated</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+```
+
+ 

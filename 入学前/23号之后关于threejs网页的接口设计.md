@@ -88,7 +88,7 @@ Gallery配置被探点引用时，探点存储Gallery配置ID和该Gallery在探
 
 本质上是一个横向的文档，类似卷轴那样，为作者提供创意面板。
 
-![fea10848d8d58ae657ec739758736573](/Users/violet-summer/code/Markdown/入学前/23号之后关于threejs网页的接口设计.assets/fea10848d8d58ae657ec739758736573.jpg)
+![fea10848d8d58ae657ec739758736573](./assets/23号之后关于threejs网页的接口设计/fea10848d8d58ae657ec739758736573.jpg)
 
 #### 基础功能
 

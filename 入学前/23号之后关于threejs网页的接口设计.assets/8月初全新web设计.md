@@ -21,6 +21,9 @@ gallery 使用这个组件  shadcn add https://ui.beste.co/r-base/showcase3
 ![](assets/2026-08-10/file-20260810122123786.png)
 
 
+选择这个也可以，因为水平可以移动
+
+
 ### 布局资产
 
 适合放置资产列表，账号类型

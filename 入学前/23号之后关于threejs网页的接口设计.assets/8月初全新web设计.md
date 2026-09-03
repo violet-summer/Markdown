@@ -62,3 +62,27 @@ bunx --bun shadcn@latest add @efferd/image-gallery-1
 ### 关于
 
 npx shadcn add https://ui.beste.co/r-base/about69
+
+也是一个不错的block网站
+
+https://www.creative-tim.com/ui/blocks#blocks
+
+
+
+
+https://headlessui.com/
+
+
+![](assets/8月初全新web设计/file-20260816182608012.png)
+
+
+
+npx shadcn@latest add "https://www.shadcn-ui-blocks.com/r/marketing-gallery-grid-gallery.json"
+
+![](assets/8月初全新web设计/file-20260816192908261.png)
+
+
+
+topbar
+
+bunx --bun shadcn@latest add https://shadcn-space.com/r/topbar-05.json
